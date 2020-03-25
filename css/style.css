@@ -1,10 +1,11 @@
 body {
-    background-image: url(../img/main-bg.png);
+    background-image: url(../img/main-bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-color:#0A090A;
     color: #ffff;
     font-family: 'Roboto', sans-serif;
+    
 }
 .container {
     /*-- -- */
@@ -19,12 +20,15 @@ body {
     /*-- Выравниваю по центру по вертикали --*/
     align-items: center;
     justify-content: space-between;
+    padding-top: 45px;
+    margin-bottom: 30%;
 }
 .logo{
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
     line-height: 28px;
+    color: rgb(255, 255, 0);
 }
 .search {
     display: flex;
@@ -78,4 +82,173 @@ body {
   :-moz-placeholder { /* Firefox 4 - 18 */
     color:#AEAEAE;
     opacity: 1;
+  }
+  /*-- Стили main --*/
+  .main{
+
+  }
+  .title{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 7px;
+  }
+  .title-en{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+    color:#787878;
+    margin-bottom: 38px;
+  }
+  .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 108px;
+  }
+  .info-movie{
+    display: flex;
+    align-items: center;
+  }
+  .info-tag{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+  }
+  .info-country{
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 33px;
+  }
+  .info-play{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .info-play:before{
+      content: '';
+      width: 30px;
+      height: 30px;
+      background-image: url(../img/play.svg);
+      background-repeat:no-repeat;
+      background-size: 100%;
+      margin-right: 15px;
+  }
+  .info-more{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .info-more:after{
+      content: '';
+      width: 30px;
+      height: 30px;
+      background-image: url(../img/play.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-left: 15px;
+      transform: rotate(90deg);
+  }
+  /*-- Стили content --*/
+  .content{
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 43px 50px;
+    color:#0A090A;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-short{}
+  .content-poster{
+      display: block;
+      margin-top: -80px;
+      margin-bottom: 20px;
+  }
+  .content-button{
+    background: #FF8F27;
+    padding: 10px 45px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .actors-title{
+    padding-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  .actors-list{
+      margin: 0;
+      list-style: none;
+      padding-left: 15px;
+      text-decoration: underline;
+  }
+  .actors-list-item{}
+  /*-- Content FULL --*/
+  .info-full{
+      flex: 0.97;
+  }
+  .tabs{}
+  .tabs-item{
+    color: black;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .tabs-item-active{
+    color: #FF8F27
+  }
+  .bookmark-added{}
+  .content-full{
+    display: flex;
+  }
+  .content-tabs{
+    margin-right: 78px;
+  }
+  .text{}
+  .text-title{}
+  .subscribe{}
+  .subcribe-taitl{
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .subscribe-mail{
+    display: flex;
+    align-items: center;
+    flex: 0.8;
+    margin-bottom: 48px;
+    width: 220px;
+  }
+  .mail-input{
+    border: none;
+    background: rgba(241, 241, 241, 0.5);
+    border-radius: 5px;
+    padding: 12px 15px;
+    width: 50%;
+    flex: 1;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .button-check{
+    border: none;
+    width: 43.5px;
+    height: 40px;
+    background: #FF8F27;
+    border-radius: 0px 5px 5px 0px;
   }
